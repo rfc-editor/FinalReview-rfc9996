@@ -1,8 +1,8 @@
-# Final Review for RFC-to-be XXXX <draft-XX> (in XML)
+# Final Review for RFC-to-be 9996 <draft-ietf-dispatch-mime-protobuf> (in XML)
 
-This repository is for managing document updates for RFC XXXX during Final Review (previously AUTH48). This is part of the [pilot GitHub-based process for Final Review](https://www.rfc-editor.org/rpc/wiki/doku.php?id=rpc_github_roadmap), and it emulates the [current Final Review procedure](https://authors.ietf.org/en/rfc-publication-process). 
+This repository is for managing document updates for RFC 9996 during Final Review (previously AUTH48). This is part of the [pilot GitHub-based process for Final Review](https://www.rfc-editor.org/rpc/wiki/doku.php?id=rpc_github_roadmap), and it emulates the [current Final Review procedure](https://authors.ietf.org/en/rfc-publication-process). 
 
-Please see the [License](https://github.com/rfc-editor/AUTH48-rfcXXXX/blob/Approved/LICENSE.md). The [IETF Note Well](https://github.com/rfc-editor/AUTH48-rfcXXXX/blob/Approved/note-well.md) applies.
+Please see the [License](https://github.com/rfc-editor/FinalReview-rfc9996/blob/Approved/LICENSE.md). The [IETF Note Well](https://github.com/rfc-editor/FinalReview-rfc9996/blob/Approved/note-well.md) applies.
 
 GitHub features that will be used:
 * Issue tracking
@@ -12,7 +12,7 @@ GitHub features that will be used:
 Authors, AD, WG chairs, and document shepherd, please ensure that your GitHub notification settings are set such that you can participate promptly in discussions of issues and pull requests. For more information, please see [Configuring notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications).  
 
 ## Pull Requests and Issue Tracking
-The initial version of rfcXXXX.xml is a copy of the Internet-Draft (in XML) as it was approved for publication. A pull request has been created that contains all the edits made by the RFC Production Center (RPC). This emulates the starting state of the [current Final Review procedure](https://authors.ietf.org/en/rfc-publication-process). 
+The initial version of rfc9996.xml is a copy of the Internet-Draft (in XML) as it was approved for publication. A pull request has been created that contains all the edits made by the RFC Production Center (RPC). This emulates the starting state of the [current Final Review procedure](https://authors.ietf.org/en/rfc-publication-process). 
 
 The edits made by the RPC appear in the RPC-edits branch.  Please work within this branch as much as possible.  In particular, use the [comment and suggestion](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request) features to comment or suggest updates.  
 
@@ -29,14 +29,14 @@ Information on using GitHub to view diffs can be found here: [Comparing commits]
 
 In addition to the files available in GitHub, the following edited files are available for your review:
 
-* [https://www.rfc-editor.org/authors/rfcXXXX.html](https://www.rfc-editor.org/authors/rfcXXXX.html)
-* [https://www.rfc-editor.org/authors/rfcXXXX.pdf](https://www.rfc-editor.org/authors/rfcXXXX.pdf)
-* [https://www.rfc-editor.org/authors/rfcXXXX.txt](https://www.rfc-editor.org/authors/rfcXXXX.txt)
-* [https://www.rfc-editor.org/authors/rfcXXXX.xml](https://www.rfc-editor.org/authors/rfcXXXX.xml)
+* [https://www.rfc-editor.org/authors/rfc9996.html](https://www.rfc-editor.org/authors/rfc9996.html)
+* [https://www.rfc-editor.org/authors/rfc9996.pdf](https://www.rfc-editor.org/authors/rfc9996.pdf)
+* [https://www.rfc-editor.org/authors/rfc9996.txt](https://www.rfc-editor.org/authors/rfc9996.txt)
+* [https://www.rfc-editor.org/authors/rfc9996.xml](https://www.rfc-editor.org/authors/rfc9996.xml)
 
 The following diff files are also available via www.rfc-editor.org:
-* [https://www.rfc-editor.org/authors/rfcXXXX-diff.html](https://www.rfc-editor.org/authors/rfcXXXX-diff.html) (all changes since the document entered the RFC Editor Queue)
-* [https://www.rfc-editor.org/authors/rfcXXXX-rfcdiff.html](https://www.rfc-editor.org/authors/rfcXXXX-rfcdiff.html) (side-by-side view of all changes since the document entered the RFC Editor Queue)
+* [https://www.rfc-editor.org/authors/rfc9996-diff.html](https://www.rfc-editor.org/authors/rfc9996-diff.html) (all changes since the document entered the RFC Editor Queue)
+* [https://www.rfc-editor.org/authors/rfc9996-rfcdiff.html](https://www.rfc-editor.org/authors/rfc9996-rfcdiff.html) (side-by-side view of all changes since the document entered the RFC Editor Queue)
 
 To create your own output and diff files, use the [IETF Author Tools webservice](https://author-tools.ietf.org/).
 
@@ -50,7 +50,7 @@ Authors should send approval by email as indicated below.
 
 **ADs** - To approve any changes that are beyond editorial, **please reply to the email requesting approval** (using **REPLY ALL**) so everyone is aware of the approval.  
 
-Details about the status of your Final Review are here: [https://queue.rfc-editor.org/final-review/rfcXXXX/](https://queue.rfc-editor.org/final-review/rfcXXXX/)
+Details about the status of your Final Review are here: [https://queue.rfc-editor.org/final-review/rfc9996/](https://queue.rfc-editor.org/final-review/rfc9996/)
 
 ## About This Repo
 Note that this repo is available only during Final Review. This repo will be archived after the RFC publication announcement is sent. 
