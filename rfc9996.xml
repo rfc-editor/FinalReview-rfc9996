@@ -212,7 +212,7 @@ person.email = "jdoe@example.com"]]></sourcecode>
         <dt>Additional information:</dt><dd><t><br/></t>
 
 	<dl spacing="compact">
-	  <dt>Deprecated alias names for this type:</dt><dd>x-protobuf+json</dd>
+	  <dt>Deprecated alias names for this type:</dt><dd>application/x-protobuf+json</dd>
 	  <dt>Magic number(s):</dt><dd>N/A</dd>
 	  <dt>File extension(s):</dt><dd>N/A</dd>
 	  <dt>Macintosh file type code(s):</dt><dd>N/A</dd>
