@@ -36,7 +36,7 @@
     <workgroup>dispatch</workgroup>
 
     <keyword>MIME</keyword>
-    <keyword>protobuf</keyword>
+    <keyword>Protobuf</keyword>
     <keyword>media type</keyword>
     <keyword>application</keyword>
 
@@ -49,7 +49,7 @@
 
     <section anchor="intro">
       <name>Introduction</name>
-      <t>Protocol Buffers (also called "protobuf") were introduced in 2008 as free, open-source, platform-independent mechanisms for transport and storage of structured data.  The use of Protobuf has become increasingly common, and Protobuf implementations exist in many languages (C++, C#, Dart, Go, Java, Kotlin, Objective-C, Python, JavaScript, Ruby, Swift, and perhaps others). See <xref target="Protobuf"/> for more information.</t>
+      <t>Protocol Buffers (also called "Protobuf") were introduced in 2008 as free, open-source, platform-independent mechanisms for transport and storage of structured data.  The use of Protobuf has become increasingly common, and Protobuf implementations exist in many languages (C++, C#, Dart, Go, Java, Kotlin, Objective-C, Python, JavaScript, Ruby, Swift, and perhaps others). See <xref target="Protobuf"/> for more information.</t>
       <t>Protobuf consists of an interface definition language (IDL), wire encoding formats, and language-specific implementations (typically involving a generated API) so that clients and servers can be easily deployed using a common schema.  Protobuf supports two wire formats for interchange: the format in <xref target="Binary"/> (which is optimized for wire efficiency) and the format in <xref target="ProtoJSON"/> (which maps the Protobuf schema onto a JSON structure).</t>
       <t>Serialized objects are occasionally transported within media that make use of media types (see <xref target="RFC2045"/>) to identify payloads. Accordingly,
 current and historical media types used for this purpose would benefit from registration. IANA has registered two Protobuf media types; see <xref target="iana"/>.</t>
@@ -116,8 +116,8 @@ person.email = "jdoe@example.com"]]></sourcecode>
     </section>
     <section anchor="security">
       <name>Security Considerations</name>
-      <t>The payload for these media types contains no directly executable code. While it is common for a protobuf definition to be used as input to a code generator, which then produces something executable, that applies to the schema language, not serializations.</t>
-      <t>Protobuf provides no security, privacy, integrity, or compression services. Clients or servers for which this is a concern should avail themselves of solutions that provide such capabilities (e.g., <xref target="RFC8446"/>). Implementations should be careful when processing Protobuf like any binary format; for example, a malformed request to a protobuf server could be crafted to allocate a very large amount of memory, potentially impacting other operations on that server.</t>
+      <t>The payload for these media types contains no directly executable code. While it is common for a Protobuf definition to be used as input to a code generator, which then produces something executable, that applies to the schema language, not serializations.</t>
+      <t>Protobuf provides no security, privacy, integrity, or compression services. Clients or servers for which this is a concern should avail themselves of solutions that provide such capabilities (e.g., <xref target="RFC8446"/>). Implementations should be careful when processing Protobuf like any binary format; for example, a malformed request to a Protobuf server could be crafted to allocate a very large amount of memory, potentially impacting other operations on that server.</t>
       <t>Protobuf supports embedded content in <tt>string</tt> or <tt>bytes</tt> fields: In both cases, applications should ensure that the format of the content is precisely as expected. Note that UTF-8 validation of <tt>string</tt> fields is optional (see <xref target="ProtoFeatures"/>), and a manual well-formedness check may be necessary. Further, handling Unicode text generally can be quite complex (due to the problems discussed in <xref target="RFC9839"/> and <xref target="RFC8264"/>, for example), so it is best to rely on well-supported internationalization libraries whenever possible.</t>
       <t>In order to safely use Protobuf serializations on the Web, it is important to ensure that they are not interpreted as another document type, such as JavaScript: We recommend base64-encoding binary Protobuf responses whenever possible to prevent parsing as active content. Servers should generally follow the advice of <xref target="RFC9205"/> to prevent content sniffing for all binary formats.</t>
       <t>Further, when using JSON serializations, it is important that it is clear to browsers that the content is pure JSON so that they can inhibit Cross-Site Script Inclusion or side-channel attacks using techniques such as Cross-Origin Read Blocking <xref target="CORB"/>. Per <xref target="RFC6839"/>, pure JSON content is indicated by a <tt>+json</tt> subtype suffix (see also <xref target="MIMESNIFF"/>); thus, when serializing Protobuf content to JSON, users <bcp14>MUST</bcp14> use the <tt>application/protobuf+json</tt> media type. When using JSON, <tt>charset</tt> can prevent certain encoding confusion attacks, so users should specify it for all JSON encodings.</t>
@@ -142,7 +142,7 @@ person.email = "jdoe@example.com"]]></sourcecode>
             parameter is for extensibility.</dd>
             <dt><tt>version</tt></dt><dd>Indicates the version of the
             wire encoding specification (not the schema language), with
-            a default of <tt>1</tt>. At the time of writing, no protobuf wire
+            a default of <tt>1</tt>. At the time of writing, no Protobuf wire
             encodings are versioned, so this parameter is for
             extensibility. Unversioned wire encodings should be treated as
             having version <tt>1</tt>.</dd>
