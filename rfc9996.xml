@@ -49,7 +49,7 @@
 
     <section anchor="intro">
       <name>Introduction</name>
-      <t>Protocol Buffer (also called "Protobuf") was introduced in 2008 as a free, open-source, platform-independent mechanism for transport and storage of structured data.  The use of Protobuf has become increasingly common, and Protobuf implementations exist in many languages (C++, C#, Dart, Go, Java, Kotlin, Objective-C, Python, JavaScript, Ruby, Swift, and perhaps others). See <xref target="Protobuf"/> for more information.</t>
+      <t>Protocol Buffers (also called "Protobuf") were introduced in 2008 as free, open-source, platform-independent mechanisms for transport and storage of structured data.  The use of Protobuf has become increasingly common, and Protobuf implementations exist in many languages (C++, C#, Dart, Go, Java, Kotlin, Objective-C, Python, JavaScript, Ruby, Swift, and perhaps others). See <xref target="Protobuf"/> for more information.</t>
       <t>Protobuf consists of an interface definition language (IDL), wire encoding formats, and language-specific implementations (typically involving a generated API) so that clients and servers can be easily deployed using a common schema.  Protobuf supports two wire formats for interchange: the format in <xref target="Binary"/> (which is optimized for wire efficiency) and the format in <xref target="ProtoJSON"/> (which maps the Protobuf schema onto a JSON structure).</t>
       <t>Serialized objects are occasionally transported within media that make use of media types (see <xref target="RFC2045"/>) to identify payloads. Accordingly,
 current and historical media types used for this purpose would benefit from registration. IANA has registered two Protobuf media types; see <xref target="iana"/>.</t>
